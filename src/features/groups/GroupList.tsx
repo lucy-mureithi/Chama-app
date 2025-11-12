@@ -1,3 +1,4 @@
+import api from '../../services/api';
 import { GroupCard } from './GroupCard';
 
 export const GroupList = ({ groups, loading, showJoinButton = false, emptyMessage }) => {
@@ -45,7 +46,7 @@ export const GroupList = ({ groups, loading, showJoinButton = false, emptyMessag
       ))}
     </div>
   );
-};import api from './api';
+};
 
 export const contributionService = {
   contribute: async (groupId, amount) => {
